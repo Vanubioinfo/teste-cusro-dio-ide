@@ -18,9 +18,9 @@ public class PrimeiroPrograma {
 
 class Livro {
     private String nome;
-    private String numPaginas;
+    private Integer numPaginas;
 
-    public Livro(String nome, String numPaginas) {
+    public Livro(String nome, Integer numPaginas) {
         this.nome = nome;
         this.numPaginas = numPaginas;
     }
@@ -33,11 +33,11 @@ class Livro {
         this.nome = nome;
     }
 
-    public String getNumPaginas() {
+    public Integer getNumPaginas() {
         return numPaginas;
     }
 
-    public void setNumPaginas(String numPaginas) {
+    public void setNumPaginas(Integer numPaginas) {
         this.numPaginas = numPaginas;
     }
 
@@ -45,7 +45,7 @@ class Livro {
     public String toString() {
         return "Livro{" +
                 "nome='" + nome + '\'' +
-                ", numPaginas='" + numPaginas + '\'' +
+                ", numPaginas=" + numPaginas +
                 '}';
     }
 }
